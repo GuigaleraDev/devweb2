@@ -1,0 +1,152 @@
+{
+  "seguradoras": [
+    {
+      "id": 1,
+      "nome": "Porto Seguro",
+      "avaliacao": 4.8,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Porto_Seguro_logo.svg/200px-Porto_Seguro_logo.svg.png",
+      "tempoMercado": 78,
+      "descricao": "Maior seguradora do Brasil, com ampla rede de atendimento e serviços 24 horas.",
+      "cnpj": "61.198.164/0001-60"
+    },
+    {
+      "id": 2,
+      "nome": "Bradesco Seguros",
+      "avaliacao": 4.5,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Bradesco_logo.svg/200px-Bradesco_logo.svg.png",
+      "tempoMercado": 65,
+      "descricao": "Parte do Grupo Bradesco, oferece cobertura completa com suporte especializado.",
+      "cnpj": "92.693.118/0001-60"
+    },
+    {
+      "id": 3,
+      "nome": "SulAmérica Seguros",
+      "avaliacao": 4.6,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SulAmerica_logo.svg/200px-SulAmerica_logo.svg.png",
+      "tempoMercado": 125,
+      "descricao": "Uma das seguradoras mais antigas do Brasil, reconhecida pela solidez e confiança.",
+      "cnpj": "29.978.814/0001-87"
+    },
+    {
+      "id": 4,
+      "nome": "Allianz Seguros",
+      "avaliacao": 4.7,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Allianz_logo.svg/200px-Allianz_logo.svg.png",
+      "tempoMercado": 130,
+      "descricao": "Grupo global com presença sólida no Brasil, referência em inovação e qualidade.",
+      "cnpj": "61.573.796/0001-66"
+    }
+  ],
+  "planos": [
+    {
+      "id": 1,
+      "nome": "Porto Básico",
+      "seguradoraId": 1,
+      "seguradoraNome": "Porto Seguro",
+      "cobertura": "Básica",
+      "precoMensal": 189.90,
+      "carroExemplo": "Fiat Argo",
+      "descricao": "Cobertura contra roubo, furto e colisão. Ideal para carros populares.",
+      "franquia": 2000
+    },
+    {
+      "id": 2,
+      "nome": "Porto Premium",
+      "seguradoraId": 1,
+      "seguradoraNome": "Porto Seguro",
+      "cobertura": "Completa",
+      "precoMensal": 389.90,
+      "carroExemplo": "Toyota Corolla",
+      "descricao": "Cobertura total com assistência 24h, carro reserva e proteção contra terceiros.",
+      "franquia": 1200
+    },
+    {
+      "id": 3,
+      "nome": "Bradesco Intermediário",
+      "seguradoraId": 2,
+      "seguradoraNome": "Bradesco Seguros",
+      "cobertura": "Intermediária",
+      "precoMensal": 259.90,
+      "carroExemplo": "Chevrolet Onix",
+      "descricao": "Cobertura intermediária com proteção contra danos a terceiros e assistência veicular.",
+      "franquia": 1800
+    },
+    {
+      "id": 4,
+      "nome": "SulAmérica Total",
+      "seguradoraId": 3,
+      "seguradoraNome": "SulAmérica Seguros",
+      "cobertura": "Completa",
+      "precoMensal": 419.90,
+      "carroExemplo": "Honda HR-V",
+      "descricao": "Plano completo com cobertura total, assistência 24h e proteção de vidros.",
+      "franquia": 1000
+    },
+    {
+      "id": 5,
+      "nome": "Allianz Essencial",
+      "seguradoraId": 4,
+      "seguradoraNome": "Allianz Seguros",
+      "cobertura": "Básica",
+      "precoMensal": 199.90,
+      "carroExemplo": "Volkswagen Gol",
+      "descricao": "Cobertura básica com foco em roubo e furto. Perfeito para o dia a dia.",
+      "franquia": 2200
+    },
+    {
+      "id": 6,
+      "nome": "Allianz Elite",
+      "seguradoraId": 4,
+      "seguradoraNome": "Allianz Seguros",
+      "cobertura": "Completa",
+      "precoMensal": 499.90,
+      "carroExemplo": "BMW Série 3",
+      "descricao": "Cobertura premium para veículos de alto valor com atendimento VIP.",
+      "franquia": 800
+    }
+  ],
+  "coberturas": [
+    {
+      "id": 1,
+      "nome": "Carro Reserva",
+      "descricao": "Veículo substituto disponível por até 15 dias enquanto seu carro está em reparo.",
+      "precoAdicional": 49.90,
+      "categoria": "Assistência"
+    },
+    {
+      "id": 2,
+      "nome": "Proteção de Vidros",
+      "descricao": "Cobre danos em para-brisas, janelas e retrovisores sem franquia.",
+      "precoAdicional": 29.90,
+      "categoria": "Danos"
+    },
+    {
+      "id": 3,
+      "nome": "Assistência 24h",
+      "descricao": "Guincho ilimitado, socorro mecânico e troca de pneus a qualquer hora.",
+      "precoAdicional": 39.90,
+      "categoria": "Assistência"
+    },
+    {
+      "id": 4,
+      "nome": "Responsabilidade Civil",
+      "descricao": "Cobertura ampliada para danos causados a terceiros, incluindo danos morais.",
+      "precoAdicional": 59.90,
+      "categoria": "Responsabilidade"
+    },
+    {
+      "id": 5,
+      "nome": "Proteção de Acessórios",
+      "descricao": "Cobre som automotivo, rodas especiais e outros acessórios instalados no veículo.",
+      "precoAdicional": 34.90,
+      "categoria": "Acessórios"
+    },
+    {
+      "id": 6,
+      "nome": "Danos Naturais",
+      "descricao": "Proteção contra enchentes, granizo, vendaval e outros fenômenos naturais.",
+      "precoAdicional": 44.90,
+      "categoria": "Danos"
+    }
+  ]
+}
