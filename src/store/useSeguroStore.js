@@ -21,7 +21,7 @@ function createStore() {
     get loading() { return data.loading },
 
     loadData() {
-      const response = await fetch(`${import.meta.env.BASE_URL}data.json`)
+      fetch(`${import.meta.env.BASE_URL}data.json`)
         .then(r => r.json())
         .then(json => {
           data = {
