@@ -1,6 +1,6 @@
 import { createHead, UnheadProvider } from '@unhead/react/client'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import App from './App.jsx' // Alterado de .tsx para .jsx
 import './index.css'
 
@@ -8,8 +8,8 @@ const head = createHead()
 
 createRoot(document.getElementById('root')).render(
   <UnheadProvider head={head}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </UnheadProvider>
 )

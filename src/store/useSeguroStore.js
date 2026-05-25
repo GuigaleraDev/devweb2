@@ -21,7 +21,7 @@ function createStore() {
     get loading() { return data.loading },
 
     loadData() {
-      fetch('/data.json')
+      fetch('devweb2/data.json')
         .then(r => r.json())
         .then(json => {
           data = {
