@@ -5,7 +5,6 @@ export default function Header() {
   return (
     <header className="bg-blue-900 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Linha Superior: Logo, Contato e Botão "Cotar Agora" */}
         <div className="flex items-center justify-between py-3 border-b border-blue-800">
           <Link to="/" className="flex items-center gap-3 group">
             <div className="bg-orange-500 p-2.5 rounded-xl group-hover:bg-orange-400 transition-colors">
@@ -26,7 +25,6 @@ export default function Header() {
               <Clock className="w-4 h-4 text-orange-400" />
               <span>Atendimento 24h</span>
             </div>
-            {/* O Botão que estava faltando */}
             <Link
               to="/planos"
               className="bg-orange-500 hover:bg-orange-400 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-colors shadow-md flex items-center gap-1.5"
