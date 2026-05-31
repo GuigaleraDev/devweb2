@@ -1,0 +1,164 @@
+{
+  "seguradoras": [
+    { "id": 1, "nome": "Porto Seguro",   "avaliacao": 4.8, "logo": "/logos/porto-seguro.jpg", "tempoMercado": 75,  "descricao": "A maior seguradora do Brasil, com mais de 75 anos de mercado e atendimento 24h.", "cnpj": "61.198.164/0001-60" },
+    { "id": 2, "nome": "Bradesco Seguros","avaliacao": 4.5, "logo": "/logos/bradesco.png",     "tempoMercado": 60,  "descricao": "Solidez e confiança do Grupo Bradesco, com ampla rede de atendimento no país.", "cnpj": "92.693.118/0001-60" },
+    { "id": 3, "nome": "SulAmérica",      "avaliacao": 4.6, "logo": "/logos/sulamerica.jpg",   "tempoMercado": 125, "descricao": "Tradição de mais de 125 anos com inovação digital e tecnologia embarcada.", "cnpj": "29.978.814/0001-87" },
+    { "id": 4, "nome": "Allianz Seguros", "avaliacao": 4.7, "logo": "/logos/allianz.png",      "tempoMercado": 130, "descricao": "Maior grupo segurador do mundo, com presença em mais de 70 países.", "cnpj": "61.573.796/0001-66" },
+    { "id": 5, "nome": "Tokio Marine",    "avaliacao": 4.6, "logo": "/logos/tokiomarine.png",  "tempoMercado": 95,  "descricao": "Seguradora japonesa com 95 anos no Brasil, referência em atendimento e qualidade.", "cnpj": "33.164.021/0001-14" },
+    { "id": 6, "nome": "HDI Seguros",     "avaliacao": 4.4, "logo": "/logos/hdi.png",          "tempoMercado": 30,  "descricao": "Parte do grupo Talanx, com foco em inovação digital e soluções personalizadas para o motorista.", "cnpj": "92.682.704/0001-03" },
+    { "id": 7, "nome": "Liberty Seguros", "avaliacao": 4.3, "logo": "/logos/liberty.png",      "tempoMercado": 45,  "descricao": "Seguradora americana com forte presença no Brasil, conhecida pelo atendimento ágil e flexível.", "cnpj": "61.550.141/0001-72" },
+    { "id": 8, "nome": "Mapfre Seguros",  "avaliacao": 4.5, "logo": "/logos/mapfre.png",       "tempoMercado": 55,  "descricao": "Grupo espanhol com ampla cobertura nacional e soluções digitais para seguros de automóveis.", "cnpj": "61.074.175/0001-38" }
+  ],
+  "planos": [
+    { "id": 101, "nome": "Porto Básico",          "seguradoraId": 1, "seguradoraNome": "Porto Seguro",    "cobertura": "Básica",        "precoMensal": 189.90, "carroExemplo": "Fiat Argo",       "descricao": "Cobertura essencial para roubo, furto e colisão.",              "franquia": 3500 },
+    { "id": 102, "nome": "Porto Proteção Total",  "seguradoraId": 1, "seguradoraNome": "Porto Seguro",    "cobertura": "Intermediária", "precoMensal": 289.90, "carroExemplo": "Honda HR-V",      "descricao": "Cobre terceiros, assistência 24h e danos morais.",              "franquia": 3000 },
+    { "id": 103, "nome": "Porto Auto Ouro",       "seguradoraId": 1, "seguradoraNome": "Porto Seguro",    "cobertura": "Completa",      "precoMensal": 429.90, "carroExemplo": "Toyota Corolla",  "descricao": "Cobertura completa com carro reserva e proteção de vidros.",   "franquia": 2500 },
+    { "id": 201, "nome": "Bradesco Essencial",    "seguradoraId": 2, "seguradoraNome": "Bradesco Seguros","cobertura": "Básica",        "precoMensal": 179.90, "carroExemplo": "Chevrolet Onix",  "descricao": "Proteção básica com assistência viagem.",                       "franquia": 3800 },
+    { "id": 202, "nome": "Bradesco Plus",         "seguradoraId": 2, "seguradoraNome": "Bradesco Seguros","cobertura": "Intermediária", "precoMensal": 279.90, "carroExemplo": "VW Polo",         "descricao": "Cobertura ampliada com guincho e carro reserva por 3 dias.",   "franquia": 3200 },
+    { "id": 203, "nome": "Bradesco Premium",      "seguradoraId": 2, "seguradoraNome": "Bradesco Seguros","cobertura": "Completa",      "precoMensal": 419.90, "carroExemplo": "Jeep Compass",    "descricao": "Plano top com cobertura total e serviços extras.",              "franquia": 2800 },
+    { "id": 301, "nome": "SulAmérica Start",      "seguradoraId": 3, "seguradoraNome": "SulAmérica",      "cobertura": "Básica",        "precoMensal": 185.00, "carroExemplo": "Fiat Mobi",       "descricao": "Entrada segura com cobertura para roubo e furto.",              "franquia": 3600 },
+    { "id": 302, "nome": "SulAmérica Classic",    "seguradoraId": 3, "seguradoraNome": "SulAmérica",      "cobertura": "Intermediária", "precoMensal": 275.00, "carroExemplo": "Hyundai HB20",   "descricao": "Plano intermediário com cobertura de danos a terceiros.",      "franquia": 3100 },
+    { "id": 303, "nome": "SulAmérica Master",     "seguradoraId": 3, "seguradoraNome": "SulAmérica",      "cobertura": "Completa",      "precoMensal": 415.00, "carroExemplo": "Toyota SW4",     "descricao": "Plano master com proteção total e assistência premium.",       "franquia": 2600 },
+    { "id": 401, "nome": "Allianz Flex",          "seguradoraId": 4, "seguradoraNome": "Allianz Seguros", "cobertura": "Básica",        "precoMensal": 195.00, "carroExemplo": "Renault Kwid",   "descricao": "Flexibilidade com cobertura personalizada desde o início.",     "franquia": 3400 },
+    { "id": 402, "nome": "Allianz Connect",       "seguradoraId": 4, "seguradoraNome": "Allianz Seguros", "cobertura": "Intermediária", "precoMensal": 295.00, "carroExemplo": "Nissan Kicks",   "descricao": "Conectado ao motorista com app e monitoramento veicular.",      "franquia": 2900 },
+    { "id": 403, "nome": "Allianz Excellence",    "seguradoraId": 4, "seguradoraNome": "Allianz Seguros", "cobertura": "Completa",      "precoMensal": 449.90, "carroExemplo": "BMW X1",         "descricao": "Excelência em cobertura para veículos de alto valor.",          "franquia": 2200 },
+    { "id": 501, "nome": "Tokio Início",          "seguradoraId": 5, "seguradoraNome": "Tokio Marine",    "cobertura": "Básica",        "precoMensal": 182.00, "carroExemplo": "Renault Sandero", "descricao": "Proteção inicial com cobertura de roubo, furto e colisão.",    "franquia": 3700 },
+    { "id": 502, "nome": "Tokio Seguro Plus",     "seguradoraId": 5, "seguradoraNome": "Tokio Marine",    "cobertura": "Intermediária", "precoMensal": 272.00, "carroExemplo": "VW T-Cross",     "descricao": "Cobertura intermediária com assistência 24h e guincho.",       "franquia": 3050 },
+    { "id": 503, "nome": "Tokio Total",           "seguradoraId": 5, "seguradoraNome": "Tokio Marine",    "cobertura": "Completa",      "precoMensal": 410.00, "carroExemplo": "Jeep Renegade",  "descricao": "Proteção completa com carro reserva, vidros e danos naturais.","franquia": 2450 },
+    { "id": 601, "nome": "HDI Light",             "seguradoraId": 6, "seguradoraNome": "HDI Seguros",     "cobertura": "Básica",        "precoMensal": 176.90, "carroExemplo": "Fiat Strada",    "descricao": "Plano leve com cobertura essencial e franquia competitiva.",   "franquia": 3900 },
+    { "id": 602, "nome": "HDI Smart",             "seguradoraId": 6, "seguradoraNome": "HDI Seguros",     "cobertura": "Intermediária", "precoMensal": 269.00, "carroExemplo": "Chevrolet Tracker","descricao": "Cobertura inteligente com app de gestão e assistência digital.","franquia": 3150 },
+    { "id": 603, "nome": "HDI Max",               "seguradoraId": 6, "seguradoraNome": "HDI Seguros",     "cobertura": "Completa",      "precoMensal": 408.00, "carroExemplo": "Toyota Hilux",   "descricao": "Máxima proteção com coberturas extras e franquia reduzida.",   "franquia": 2550 },
+    { "id": 701, "nome": "Liberty Essencial",     "seguradoraId": 7, "seguradoraNome": "Liberty Seguros", "cobertura": "Básica",        "precoMensal": 184.90, "carroExemplo": "Hyundai HB20",   "descricao": "Cobertura básica com foco em roubo, furto e colisão parcial.", "franquia": 3650 },
+    { "id": 702, "nome": "Liberty Advance",       "seguradoraId": 7, "seguradoraNome": "Liberty Seguros", "cobertura": "Intermediária", "precoMensal": 277.00, "carroExemplo": "Nissan Kicks",   "descricao": "Plano intermediário com proteção de terceiros e mobilidade.",  "franquia": 3050 },
+    { "id": 703, "nome": "Liberty Premier",       "seguradoraId": 7, "seguradoraNome": "Liberty Seguros", "cobertura": "Completa",      "precoMensal": 422.00, "carroExemplo": "Honda HR-V",     "descricao": "Cobertura premier com serviços exclusivos e carro reserva.",   "franquia": 2600 },
+    { "id": 801, "nome": "Mapfre Básico",         "seguradoraId": 8, "seguradoraNome": "Mapfre Seguros",  "cobertura": "Básica",        "precoMensal": 180.90, "carroExemplo": "Chevrolet Onix", "descricao": "Proteção simples e acessível para veículos populares.",        "franquia": 3750 },
+    { "id": 802, "nome": "Mapfre Avançado",       "seguradoraId": 8, "seguradoraNome": "Mapfre Seguros",  "cobertura": "Intermediária", "precoMensal": 274.00, "carroExemplo": "Fiat Argo",      "descricao": "Cobertura avançada com danos a terceiros e guincho.",         "franquia": 3100 },
+    { "id": 803, "nome": "Mapfre Total",          "seguradoraId": 8, "seguradoraNome": "Mapfre Seguros",  "cobertura": "Completa",      "precoMensal": 418.00, "carroExemplo": "Toyota Corolla","descricao": "Proteção total com coberturas ampliadas e assistência premium.","franquia": 2650 }
+  ],
+  "coberturas": [
+    { "id": 1001, "nome": "Proteção de Vidros",       "descricao": "Cobre quebra ou trinca de para-brisa, vidros laterais e traseiro sem franquia.",  "precoAdicional": 45.00, "categoria": "Proteção Física" },
+    { "id": 1002, "nome": "Carro Reserva",             "descricao": "Disponibiliza veículo reserva por até 15 dias em caso de sinistro.",               "precoAdicional": 55.00, "categoria": "Mobilidade"      },
+    { "id": 1003, "nome": "Assistência 24h Premium",  "descricao": "Guincho ilimitado, chaveiro, troca de pneus e socorro mecânico em qualquer local.", "precoAdicional": 35.00, "categoria": "Assistência"     },
+    { "id": 1004, "nome": "Proteção Personalizada",   "descricao": "Cobre acessórios instalados, som automotivo e equipamentos especiais até R$ 5.000.","precoAdicional": 40.00, "categoria": "Proteção Física" },
+    { "id": 1005, "nome": "Cobertura de Condutor",    "descricao": "Indenização por morte ou invalidez permanente do condutor principal.",              "precoAdicional": 30.00, "categoria": "Vida"            },
+    { "id": 1006, "nome": "Danos Naturais",           "descricao": "Cobertura para alagamento, granizo, queda de árvore e outros fenômenos naturais.",  "precoAdicional": 50.00, "categoria": "Proteção Física" },
+    { "id": 1007, "nome": "Responsabilidade Civil",   "descricao": "Amplia a cobertura para danos materiais e corporais a terceiros em até R$ 100.000.","precoAdicional": 65.00, "categoria": "Terceiros"       },
+    { "id": 1008, "nome": "Proteção Judicial",        "descricao": "Assistência jurídica em casos de acidente de trânsito, multas e infrações.",         "precoAdicional": 25.00, "categoria": "Jurídico"        }
+  ],
+  "carros": [
+    { "id": "argo",     "marca": "Fiat",       "modelo": "Argo",      "categoria": "Popular",      "fipe": 72000,  "imagem": "/carros/argo.png" },
+    { "id": "mobi",     "marca": "Fiat",       "modelo": "Mobi",      "categoria": "Popular",      "fipe": 62000,  "imagem": "/carros/mobi.png" },
+    { "id": "strada",   "marca": "Fiat",       "modelo": "Strada",    "categoria": "Popular",      "fipe": 95000,  "imagem": "/carros/strada.png" },
+    { "id": "onix",     "marca": "Chevrolet",  "modelo": "Onix",      "categoria": "Popular",      "fipe": 78000,  "imagem": "/carros/onix.png" },
+    { "id": "tracker",  "marca": "Chevrolet",  "modelo": "Tracker",   "categoria": "SUV Compacto", "fipe": 118000, "imagem": "/carros/tracker.png" },
+    { "id": "polo",     "marca": "Volkswagen", "modelo": "Polo",      "categoria": "Popular",      "fipe": 84000,  "imagem": "/carros/polo.png" },
+    { "id": "tcross",   "marca": "Volkswagen", "modelo": "T-Cross",   "categoria": "SUV Compacto", "fipe": 112000, "imagem": "/carros/tcross.png" },
+    { "id": "hb20",     "marca": "Hyundai",    "modelo": "HB20",      "categoria": "Popular",      "fipe": 76000,  "imagem": "/carros/hb20.png" },
+    { "id": "kwid",     "marca": "Renault",    "modelo": "Kwid",      "categoria": "Popular",      "fipe": 60000,  "imagem": "/carros/kwid.png" },
+    { "id": "sandero",  "marca": "Renault",    "modelo": "Sandero",   "categoria": "Popular",      "fipe": 74000,  "imagem": "/carros/sandero.png" },
+    { "id": "kicks",    "marca": "Nissan",     "modelo": "Kicks",     "categoria": "SUV Compacto", "fipe": 108000, "imagem": "/carros/kicks.png" },
+    { "id": "hrv",      "marca": "Honda",      "modelo": "HR-V",      "categoria": "SUV Compacto", "fipe": 125000, "imagem": "/carros/hrv.png" },
+    { "id": "corolla",  "marca": "Toyota",     "modelo": "Corolla",   "categoria": "Sedan Médio",  "fipe": 142000, "imagem": "/carros/corolla.png" },
+    { "id": "compass",  "marca": "Jeep",       "modelo": "Compass",   "categoria": "SUV Grande",   "fipe": 155000, "imagem": "/carros/compass.png" },
+    { "id": "renegade", "marca": "Jeep",       "modelo": "Renegade",  "categoria": "SUV Compacto", "fipe": 118000, "imagem": "/carros/renegade.png" },
+    { "id": "hilux",    "marca": "Toyota",     "modelo": "Hilux",     "categoria": "SUV Grande",   "fipe": 195000, "imagem": "/carros/hilux.png" }
+  ],
+  "tabelaPrecos": [
+    {
+      "planoId": 101, "planoNome": "Porto Básico", "seguradoraNome": "Porto Seguro", "cobertura": "Básica", "franquia": 3500,
+      "precos": { "argo": 189.90, "mobi": 175.90, "strada": 215.90, "onix": 199.90, "tracker": 249.90, "polo": 205.90, "tcross": 245.90, "hb20": 192.90, "kwid": 169.90, "sandero": 188.90, "kicks": 239.90, "hrv": 265.90, "corolla": 299.90, "compass": 319.90, "renegade": 249.90, "hilux": 389.90 }
+    },
+    {
+      "planoId": 102, "planoNome": "Porto Proteção Total", "seguradoraNome": "Porto Seguro", "cobertura": "Intermediária", "franquia": 3000,
+      "precos": { "argo": 289.90, "mobi": 269.90, "strada": 319.90, "onix": 299.90, "tracker": 369.90, "polo": 309.90, "tcross": 365.90, "hb20": 292.90, "kwid": 259.90, "sandero": 285.90, "kicks": 355.90, "hrv": 389.90, "corolla": 439.90, "compass": 469.90, "renegade": 365.90, "hilux": 549.90 }
+    },
+    {
+      "planoId": 103, "planoNome": "Porto Auto Ouro", "seguradoraNome": "Porto Seguro", "cobertura": "Completa", "franquia": 2500,
+      "precos": { "argo": 429.90, "mobi": 399.90, "strada": 469.90, "onix": 449.90, "tracker": 539.90, "polo": 459.90, "tcross": 529.90, "hb20": 435.90, "kwid": 385.90, "sandero": 425.90, "kicks": 519.90, "hrv": 579.90, "corolla": 649.90, "compass": 689.90, "renegade": 535.90, "hilux": 829.90 }
+    },
+    {
+      "planoId": 201, "planoNome": "Bradesco Essencial", "seguradoraNome": "Bradesco Seguros", "cobertura": "Básica", "franquia": 3800,
+      "precos": { "argo": 179.90, "mobi": 165.90, "strada": 209.90, "onix": 189.90, "tracker": 239.90, "polo": 195.90, "tcross": 235.90, "hb20": 183.90, "kwid": 159.90, "sandero": 178.90, "kicks": 229.90, "hrv": 255.90, "corolla": 289.90, "compass": 309.90, "renegade": 239.90, "hilux": 379.90 }
+    },
+    {
+      "planoId": 202, "planoNome": "Bradesco Plus", "seguradoraNome": "Bradesco Seguros", "cobertura": "Intermediária", "franquia": 3200,
+      "precos": { "argo": 279.90, "mobi": 259.90, "strada": 309.90, "onix": 289.90, "tracker": 359.90, "polo": 299.90, "tcross": 355.90, "hb20": 283.90, "kwid": 249.90, "sandero": 275.90, "kicks": 345.90, "hrv": 379.90, "corolla": 429.90, "compass": 459.90, "renegade": 355.90, "hilux": 539.90 }
+    },
+    {
+      "planoId": 203, "planoNome": "Bradesco Premium", "seguradoraNome": "Bradesco Seguros", "cobertura": "Completa", "franquia": 2800,
+      "precos": { "argo": 419.90, "mobi": 389.90, "strada": 459.90, "onix": 439.90, "tracker": 529.90, "polo": 449.90, "tcross": 519.90, "hb20": 425.90, "kwid": 375.90, "sandero": 415.90, "kicks": 509.90, "hrv": 569.90, "corolla": 639.90, "compass": 679.90, "renegade": 525.90, "hilux": 819.90 }
+    },
+    {
+      "planoId": 301, "planoNome": "SulAmérica Start", "seguradoraNome": "SulAmérica", "cobertura": "Básica", "franquia": 3600,
+      "precos": { "argo": 185.00, "mobi": 170.00, "strada": 212.00, "onix": 195.00, "tracker": 244.00, "polo": 200.00, "tcross": 240.00, "hb20": 188.00, "kwid": 163.00, "sandero": 183.00, "kicks": 234.00, "hrv": 260.00, "corolla": 294.00, "compass": 314.00, "renegade": 244.00, "hilux": 384.00 }
+    },
+    {
+      "planoId": 302, "planoNome": "SulAmérica Classic", "seguradoraNome": "SulAmérica", "cobertura": "Intermediária", "franquia": 3100,
+      "precos": { "argo": 275.00, "mobi": 255.00, "strada": 305.00, "onix": 285.00, "tracker": 355.00, "polo": 295.00, "tcross": 351.00, "hb20": 279.00, "kwid": 245.00, "sandero": 271.00, "kicks": 341.00, "hrv": 375.00, "corolla": 425.00, "compass": 455.00, "renegade": 351.00, "hilux": 535.00 }
+    },
+    {
+      "planoId": 303, "planoNome": "SulAmérica Master", "seguradoraNome": "SulAmérica", "cobertura": "Completa", "franquia": 2600,
+      "precos": { "argo": 415.00, "mobi": 385.00, "strada": 455.00, "onix": 435.00, "tracker": 525.00, "polo": 445.00, "tcross": 515.00, "hb20": 421.00, "kwid": 371.00, "sandero": 411.00, "kicks": 505.00, "hrv": 565.00, "corolla": 635.00, "compass": 675.00, "renegade": 521.00, "hilux": 815.00 }
+    },
+    {
+      "planoId": 401, "planoNome": "Allianz Flex", "seguradoraNome": "Allianz Seguros", "cobertura": "Básica", "franquia": 3400,
+      "precos": { "argo": 195.00, "mobi": 180.00, "strada": 222.00, "onix": 205.00, "tracker": 254.00, "polo": 210.00, "tcross": 250.00, "hb20": 198.00, "kwid": 173.00, "sandero": 193.00, "kicks": 244.00, "hrv": 270.00, "corolla": 304.00, "compass": 324.00, "renegade": 254.00, "hilux": 394.00 }
+    },
+    {
+      "planoId": 402, "planoNome": "Allianz Connect", "seguradoraNome": "Allianz Seguros", "cobertura": "Intermediária", "franquia": 2900,
+      "precos": { "argo": 295.00, "mobi": 275.00, "strada": 325.00, "onix": 305.00, "tracker": 375.00, "polo": 315.00, "tcross": 371.00, "hb20": 299.00, "kwid": 265.00, "sandero": 291.00, "kicks": 361.00, "hrv": 395.00, "corolla": 445.00, "compass": 475.00, "renegade": 371.00, "hilux": 555.00 }
+    },
+    {
+      "planoId": 403, "planoNome": "Allianz Excellence", "seguradoraNome": "Allianz Seguros", "cobertura": "Completa", "franquia": 2200,
+      "precos": { "argo": 449.90, "mobi": 419.90, "strada": 489.90, "onix": 469.90, "tracker": 559.90, "polo": 479.90, "tcross": 549.90, "hb20": 455.90, "kwid": 405.90, "sandero": 445.90, "kicks": 539.90, "hrv": 599.90, "corolla": 669.90, "compass": 709.90, "renegade": 555.90, "hilux": 849.90 }
+    },
+    {
+      "planoId": 501, "planoNome": "Tokio Início", "seguradoraNome": "Tokio Marine", "cobertura": "Básica", "franquia": 3700,
+      "precos": { "argo": 182.00, "mobi": 168.00, "strada": 210.00, "onix": 192.00, "tracker": 242.00, "polo": 198.00, "tcross": 238.00, "hb20": 185.00, "kwid": 161.00, "sandero": 181.00, "kicks": 232.00, "hrv": 258.00, "corolla": 292.00, "compass": 312.00, "renegade": 242.00, "hilux": 382.00 }
+    },
+    {
+      "planoId": 502, "planoNome": "Tokio Seguro Plus", "seguradoraNome": "Tokio Marine", "cobertura": "Intermediária", "franquia": 3050,
+      "precos": { "argo": 272.00, "mobi": 252.00, "strada": 302.00, "onix": 282.00, "tracker": 352.00, "polo": 292.00, "tcross": 348.00, "hb20": 276.00, "kwid": 242.00, "sandero": 268.00, "kicks": 338.00, "hrv": 372.00, "corolla": 422.00, "compass": 452.00, "renegade": 348.00, "hilux": 532.00 }
+    },
+    {
+      "planoId": 503, "planoNome": "Tokio Total", "seguradoraNome": "Tokio Marine", "cobertura": "Completa", "franquia": 2450,
+      "precos": { "argo": 410.00, "mobi": 380.00, "strada": 450.00, "onix": 430.00, "tracker": 520.00, "polo": 440.00, "tcross": 510.00, "hb20": 416.00, "kwid": 366.00, "sandero": 406.00, "kicks": 500.00, "hrv": 560.00, "corolla": 630.00, "compass": 670.00, "renegade": 516.00, "hilux": 810.00 }
+    },
+    {
+      "planoId": 601, "planoNome": "HDI Light", "seguradoraNome": "HDI Seguros", "cobertura": "Básica", "franquia": 3900,
+      "precos": { "argo": 176.90, "mobi": 163.90, "strada": 206.90, "onix": 186.90, "tracker": 236.90, "polo": 192.90, "tcross": 232.90, "hb20": 180.90, "kwid": 156.90, "sandero": 175.90, "kicks": 226.90, "hrv": 252.90, "corolla": 286.90, "compass": 306.90, "renegade": 236.90, "hilux": 376.90 }
+    },
+    {
+      "planoId": 602, "planoNome": "HDI Smart", "seguradoraNome": "HDI Seguros", "cobertura": "Intermediária", "franquia": 3150,
+      "precos": { "argo": 269.00, "mobi": 249.00, "strada": 299.00, "onix": 279.00, "tracker": 349.00, "polo": 289.00, "tcross": 345.00, "hb20": 273.00, "kwid": 239.00, "sandero": 265.00, "kicks": 335.00, "hrv": 369.00, "corolla": 419.00, "compass": 449.00, "renegade": 345.00, "hilux": 529.00 }
+    },
+    {
+      "planoId": 603, "planoNome": "HDI Max", "seguradoraNome": "HDI Seguros", "cobertura": "Completa", "franquia": 2550,
+      "precos": { "argo": 408.00, "mobi": 378.00, "strada": 448.00, "onix": 428.00, "tracker": 518.00, "polo": 438.00, "tcross": 508.00, "hb20": 414.00, "kwid": 364.00, "sandero": 404.00, "kicks": 498.00, "hrv": 558.00, "corolla": 628.00, "compass": 668.00, "renegade": 514.00, "hilux": 808.00 }
+    },
+    {
+      "planoId": 701, "planoNome": "Liberty Essencial", "seguradoraNome": "Liberty Seguros", "cobertura": "Básica", "franquia": 3650,
+      "precos": { "argo": 184.90, "mobi": 170.90, "strada": 212.90, "onix": 193.90, "tracker": 243.90, "polo": 199.90, "tcross": 239.90, "hb20": 187.90, "kwid": 162.90, "sandero": 182.90, "kicks": 233.90, "hrv": 259.90, "corolla": 293.90, "compass": 313.90, "renegade": 243.90, "hilux": 383.90 }
+    },
+    {
+      "planoId": 702, "planoNome": "Liberty Advance", "seguradoraNome": "Liberty Seguros", "cobertura": "Intermediária", "franquia": 3050,
+      "precos": { "argo": 277.00, "mobi": 257.00, "strada": 307.00, "onix": 287.00, "tracker": 357.00, "polo": 297.00, "tcross": 353.00, "hb20": 281.00, "kwid": 247.00, "sandero": 273.00, "kicks": 343.00, "hrv": 377.00, "corolla": 427.00, "compass": 457.00, "renegade": 353.00, "hilux": 537.00 }
+    },
+    {
+      "planoId": 703, "planoNome": "Liberty Premier", "seguradoraNome": "Liberty Seguros", "cobertura": "Completa", "franquia": 2600,
+      "precos": { "argo": 422.00, "mobi": 392.00, "strada": 462.00, "onix": 442.00, "tracker": 532.00, "polo": 452.00, "tcross": 522.00, "hb20": 428.00, "kwid": 378.00, "sandero": 418.00, "kicks": 512.00, "hrv": 572.00, "corolla": 642.00, "compass": 682.00, "renegade": 528.00, "hilux": 822.00 }
+    },
+    {
+      "planoId": 801, "planoNome": "Mapfre Básico", "seguradoraNome": "Mapfre Seguros", "cobertura": "Básica", "franquia": 3750,
+      "precos": { "argo": 180.90, "mobi": 166.90, "strada": 208.90, "onix": 190.90, "tracker": 240.90, "polo": 196.90, "tcross": 236.90, "hb20": 184.90, "kwid": 160.90, "sandero": 179.90, "kicks": 230.90, "hrv": 256.90, "corolla": 290.90, "compass": 310.90, "renegade": 240.90, "hilux": 380.90 }
+    },
+    {
+      "planoId": 802, "planoNome": "Mapfre Avançado", "seguradoraNome": "Mapfre Seguros", "cobertura": "Intermediária", "franquia": 3100,
+      "precos": { "argo": 274.00, "mobi": 254.00, "strada": 304.00, "onix": 284.00, "tracker": 354.00, "polo": 294.00, "tcross": 350.00, "hb20": 278.00, "kwid": 244.00, "sandero": 270.00, "kicks": 340.00, "hrv": 374.00, "corolla": 424.00, "compass": 454.00, "renegade": 350.00, "hilux": 534.00 }
+    },
+    {
+      "planoId": 803, "planoNome": "Mapfre Total", "seguradoraNome": "Mapfre Seguros", "cobertura": "Completa", "franquia": 2650,
+      "precos": { "argo": 418.00, "mobi": 388.00, "strada": 458.00, "onix": 438.00, "tracker": 528.00, "polo": 448.00, "tcross": 518.00, "hb20": 424.00, "kwid": 374.00, "sandero": 414.00, "kicks": 508.00, "hrv": 568.00, "corolla": 638.00, "compass": 678.00, "renegade": 524.00, "hilux": 818.00 }
+    }
+  ]
+}
