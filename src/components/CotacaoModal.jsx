@@ -41,7 +41,6 @@ export default function CotacaoModal({ plano, onClose }) {
       onClick={e => e.target === e.currentTarget && onClose()}
     >
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden">
-        {/* Header */}
         <div className="bg-gradient-to-r from-blue-900 to-blue-700 px-6 py-5 flex items-start justify-between">
           <div>
             <p className="text-blue-200 text-xs font-semibold uppercase tracking-widest mb-1">Cotação de Seguro</p>
@@ -52,8 +51,6 @@ export default function CotacaoModal({ plano, onClose }) {
             <X className="w-5 h-5" />
           </button>
         </div>
-
-        {/* Plano resumo */}
         <div className={`px-6 py-3 flex items-center justify-between border-b ${colors.bg} ${colors.border} border`}>
           <div className="flex items-center gap-3">
             <Shield className={`w-4 h-4 ${colors.text}`} />
