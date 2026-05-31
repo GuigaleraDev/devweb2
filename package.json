@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://GuigaleraDev.github.io/devweb2",
-  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
