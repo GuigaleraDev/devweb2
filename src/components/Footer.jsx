@@ -1,5 +1,5 @@
 import { Shield, Mail, Phone, MapPin } from 'lucide-react'
-import { Link } from 'react-router-dom' // <--- Correção Principal
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -21,7 +21,6 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-orange-400 mb-3 uppercase text-xs tracking-widest">Navegação</h3>
             <ul className="space-y-2 text-sm text-blue-200">
-              {/* Uso do Link em vez de <a> para garantir a SPA */}
               <li><Link to="/" className="hover:text-white transition-colors">Início</Link></li>
               <li><Link to="/seguradoras" className="hover:text-white transition-colors">Seguradoras</Link></li>
               <li><Link to="/planos" className="hover:text-white transition-colors">Planos de Seguro</Link></li>
