@@ -16,7 +16,6 @@ export default function Navbar() {
     <nav className="bg-blue-800 sticky top-0 z-40 shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-12 md:h-auto">
-          {/* Desktop */}
           <div className="hidden md:flex items-center gap-1 py-1">
             {links.map(({ to, label, icon: Icon, end }) => (
               <NavLink
@@ -36,8 +35,6 @@ export default function Navbar() {
               </NavLink>
             ))}
           </div>
-
-          {/* Mobile toggle */}
           <button
             className="md:hidden text-white p-2"
             onClick={() => setOpen(o => !o)}
@@ -46,8 +43,6 @@ export default function Navbar() {
             {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
-
-        {/* Mobile menu */}
         {open && (
           <div className="md:hidden pb-3 flex flex-col gap-1">
             {links.map(({ to, label, icon: Icon, end }) => (
