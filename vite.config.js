@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/comparador-novo/', // Mude para o nome do repositório no GitHub Pages
+  base: '/devweb2/',
   plugins: [
     react(),
     tailwindcss(),
