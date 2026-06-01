@@ -8,13 +8,13 @@ import { Shield, TrendingUp, Users, Award, ArrowRight, Car, CheckCircle, Search 
 export default function Home() {
   const { seguradoras, planos, coberturas, loading } = useSeguroStore()
   
-  // Agora temos dois estados: um para o que está sendo digitado, outro para a busca final
+
   const [termoDigitado, setTermoDigitado] = useState('')
   const [buscaAtiva, setBuscaAtiva] = useState('')
   
   const [planoSelecionado, setPlanoSelecionado] = useState(null)
 
-  // O filtro agora reage apenas à "buscaAtiva" (após o clique)
+
   const planosFiltrados = planos.filter(p =>
     p.nome.toLowerCase().includes(buscaAtiva.toLowerCase()) ||
     p.seguradoraNome.toLowerCase().includes(buscaAtiva.toLowerCase()) ||
