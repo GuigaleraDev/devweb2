@@ -24,6 +24,7 @@ function createStore() {
     get tabelaPrecos() { return data.tabelaPrecos },
     get loading() { return data.loading },
 
+    //CARREGAMENTO DINÂMICO DE TODO O CONTEÚDO DO WEBSITE A PARTIR DE UM ARQUIVO JSON LOCAL
     loadData() {
       fetch(`${import.meta.env.BASE_URL}data.json`)
         .then(r => r.json())

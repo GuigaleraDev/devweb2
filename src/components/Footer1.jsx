@@ -1,13 +1,10 @@
 import { Mail, Phone, MapPin } from 'lucide-react'
-import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
     <footer className="bg-blue-900 text-white mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          {/* Logo incorporada diretamente no Footer */}
           <div>
             <div className="flex items-center gap-3 mb-4">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-lg">
@@ -37,19 +34,19 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-orange-400 mb-3 uppercase text-xs tracking-widest">Navegação</h3>
             <ul className="space-y-2 text-sm text-blue-200">
-              <li><Link to="/" className="hover:text-white transition-colors block py-1">Início</Link></li>
-              <li><Link to="/seguradoras" className="hover:text-white transition-colors block py-1">Seguradoras</Link></li>
-              <li><Link to="/planos" className="hover:text-white transition-colors block py-1">Planos de Seguro</Link></li>
-              <li><Link to="/coberturas" className="hover:text-white transition-colors block py-1">Coberturas Adicionais</Link></li>
+              <li><a href="/" className="hover:text-white transition-colors">Início</a></li>
+              <li><a href="/#/seguradoras" className="hover:text-white transition-colors">Seguradoras</a></li>
+              <li><a href="/#/planos" className="hover:text-white transition-colors">Planos de Seguro</a></li>
+              <li><a href="/#/coberturas" className="hover:text-white transition-colors">Coberturas Adicionais</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold text-orange-400 mb-3 uppercase text-xs tracking-widest">Contato</h3>
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="flex items-center gap-2 py-1"><Phone className="w-4 h-4 text-orange-400" /> 0800 123 1234</li>
-              <li className="flex items-center gap-2 py-1"><Mail className="w-4 h-4 text-orange-400" /> contato@comparadorseguros.com.br</li>
-              <li className="flex items-center gap-2 py-1"><MapPin className="w-4 h-4 text-orange-400" /> São Paulo, SP — Brasil</li>
+              <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange-400" /> 0800 123 1234</li>
+              <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange-400" /> contato@comparadorseguros.com.br</li>
+              <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange-400" /> São Paulo, SP — Brasil</li>
             </ul>
           </div>
         </div>

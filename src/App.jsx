@@ -11,6 +11,7 @@ import CoberturasPage from './pages/CoberturasPage'
 import ComparadorPage from './pages/ComparadorPage'
 import { useSeguroStore } from './store/useSeguroStore'
 
+//NAVEGAÇÃO POR ROTAS POR MEIO DA BIBLIOTECA REACT ROUTER
 export const routes = [
   { path: '/', element: <Home /> },
   { path: '/comparador', element: <ComparadorPage /> },

@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { Home, Building2, FileText, ShieldPlus, GitCompare, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
+//NAVEGAÇÃO POR ROTAS POR MEIO DA BIBLIOTECA REACT ROUTER
 const links = [
   { to: '/', label: 'Início', icon: Home, end: true },
   { to: '/comparador', label: 'Comparar', icon: GitCompare, end: false, highlight: false },

@@ -55,17 +55,15 @@ export default function ComparadorPage() {
   const menorPreco = linhas[0]?.preco ?? null
 
   function handleCotar(tp) {
-    // 1. Busca os dados originais do plano (para manter a descrição e IDs)
+
     const planoOriginal = planos.find(p => p.id === tp.planoId) || {};
     
-    // 2. Monta o plano para o Modal, forçando a substituição do carro
     setCotacaoPlano({ 
       ...planoOriginal,
       nome: tp.planoNome,
       seguradoraNome: tp.seguradoraNome,
       cobertura: tp.cobertura,
-      precoMensal: tp.preco, // Usa o preço real da tabela
-      // O SEGREDO ESTÁ AQUI: Injeta o nome do carro selecionado na tela
+      precoMensal: tp.preco,
       carroExemplo: carroObj ? `${carroObj.marca} ${carroObj.modelo}` : planoOriginal.carroExemplo,
       franquia: tp.franquia,
     });
@@ -175,10 +173,7 @@ export default function ComparadorPage() {
 
         {carroSelecionado && carroObj && (
           <>
-            {/* O NOVO DASHBOARD DO CARRO */}
             <div className="flex flex-col md:flex-row gap-6 mb-8 items-stretch">
-              
-              {/* Painel Esquerdo: Imagem do Carro (Requisito do Projeto) */}
               <div className="md:w-1/3 bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-100 p-6 shadow-sm flex flex-col items-center justify-center relative overflow-hidden group">
                 <div className="absolute top-0 right-0 bg-blue-100 text-blue-800 text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest z-10">
                   Veículo Selecionado
@@ -202,8 +197,6 @@ export default function ComparadorPage() {
                   </p>
                 </div>
               </div>
-
-              {/* Painel Direito: Cards de Estatísticas */}
               <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-white rounded-2xl border border-blue-100 p-6 shadow-sm flex flex-col justify-center gap-2">
                   <div className="flex items-center gap-3">
@@ -237,8 +230,6 @@ export default function ComparadorPage() {
                 </div>
               </div>
             </div>
-
-            {/* Tabela de Planos */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
               <div className="hidden md:block overflow-x-auto">
                 <table className="w-full text-sm">

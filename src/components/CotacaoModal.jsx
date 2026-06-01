@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import { X, Car, User, Phone, Mail, CheckCircle, Shield, ChevronRight } from 'lucide-react'
 
+//PASSAGEM DE DADOS COM O OBJETO PROPS
 export default function CotacaoModal(props) {
   const { plano, onClose } = props;
 
+
+//ATUALIZAÇÃO DE DADOS COM O OBJETO STATE
   const [step, setStep] = useState('form')
   const [form, setForm] = useState({
     nome: '',

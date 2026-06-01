@@ -1,5 +1,6 @@
 import { Pencil, Trash2 } from 'lucide-react';
 
+//PASSAGEM DE DADOS COM O OBJETO PROPS
 export default function GenericTable(props) {
   const { columns, data, onEdit, onDelete, emptyMessage = "Nenhum registro encontrado." } = props;
 
