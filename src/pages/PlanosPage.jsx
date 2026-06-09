@@ -150,7 +150,6 @@ export default function PlanosPage() {
         </button>
       </div>
 
-      {/* Filtros */}
       <div className="flex flex-wrap gap-2 mb-4">
         {['todos', 'Básica', 'Intermediária', 'Completa'].map(opt => (
           <button
